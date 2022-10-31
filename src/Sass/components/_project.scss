@@ -1,0 +1,18 @@
+.project {
+    height:20rem;
+    
+    &--under-water {
+        background-image: url(../../static/img/under-water.png);
+        background-size: cover;
+    }
+
+    &--hala-madrid {
+        background-image: url(../../static/img/hala-madrid.png);
+        background-size: cover;
+    }
+
+    &--woman-life-freedom {
+        background-image: url(../../static/img/woman-life-freedom.png);
+        background-size: cover;
+    }
+}
