@@ -112,7 +112,7 @@ const particleMaterial = new THREE.ShaderMaterial(
                 vec4 viewPosition = viewMatrix * modelPosition;
                 vec4 projectionPosition = projectionMatrix * viewPosition;
                 gl_Position = projectionPosition;
-                gl_PointSize = (12.0 + sin(uTime * length(aNoise) * 10.0)) / gl_Position.z;
+                gl_PointSize = (12.0 + sin(uTime * length(aNoise) * 30.0)) / gl_Position.z;
                 
                 vNoise = aNoise;
             }
@@ -138,7 +138,7 @@ const particleMaterial = new THREE.ShaderMaterial(
                 // baseColor.b += sin(uTime * 0.1) * 0.5;
 
                 //baseColor.r += vNoise.x* 2.0;
-                baseColor.g += vNoise.y* 3.0;
+                baseColor.g += vNoise.y* 2.0;
                 //baseColor.b += vNoise.z* 5.0;
 
                 gl_FragColor = vec4(strength * baseColor , 1.0);

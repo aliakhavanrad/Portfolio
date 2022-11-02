@@ -8,7 +8,16 @@
     height: 100vh;
     outline: none;
     z-index: -5;
+    overflow-x: hidden;
 }
+
+.menu {
+    position: sticky;
+    top: 20px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
 
 
 .section-intro
@@ -33,10 +42,12 @@
 
 .intro__name
 {    
-    font-size: 3rem; 
+    font-size: 3.5rem; 
+    letter-spacing: .5rem;
     padding: 2rem;
     animation: intro__name-move-down 1.8s ease-out;
     backface-visibility: hidden;
+    text-shadow: 0 4px 8px #dddddd55;
 }
 
 @keyframes intro__name-move-down {
@@ -59,6 +70,8 @@
 .intro__title{
     font-size: 2.4rem;  
     animation: intro__title-move-up 1.8s ease-out;  
+    letter-spacing: 1rem;
+    text-shadow: 0 4px 8px #dddddd55;
 }
 
 
@@ -98,10 +111,12 @@
 
 .about__heading{
     display: inline-block;
-    font-size: 4rem;
+    font-size: 3rem;
     border-bottom: 2px solid #555555aa;
     padding: 1rem;
     text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-shadow: 0 2px 4px #00000055;
 }
 
 .about__list
@@ -111,20 +126,42 @@
 
 .about__list-items 
 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1rem;
 }
 
+
+
+
 .section_personal-projects {
     padding: 3rem;
+    color: rgba(255,255,255, 0.9);
+}
+
+.personal-projects__heading {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    letter-spacing: .8rem;
+    border-bottom: 2px solid rgba(255,255,255, 0.9);
+    text-shadow: 0 4px 8px #dddddd55;
+    text-transform: uppercase;
 }
 
 
 
-.personal-projects__heading {
-    display: inline-block;
-    font-size: 4rem;
-    border-bottom: 2px solid #555555aa;
-   
-    text-transform: uppercase;
+.section-footer {
+    position: relative;
+    width: 100vw;
+    z-index: 10;
+    padding: 2rem;
+    background-image: linear-gradient(to right bottom, 
+                                    rgba(255,255,255, 0.9) 0%,
+                                    rgba(255,255,255, 0.9) 50%,
+                                    rgba(255,255,255, 0.3) ) ;
+    color: #555555;
+}
+
+.footer {
+    font-size: 1.5rem;
 }
