@@ -202,10 +202,10 @@ const tick = () =>
     particlesUniforms.uTime.value = elapsedTime;
 
 
-    gsap.to(camera.position, { x: mousePosition.x * 0.06, duration: 2 })
-    gsap.to(camera.position, { y: mousePosition.y * 0.06, duration: 2 })
+    gsap.to(camera.position, { x: mousePosition.x * 0.09, duration: 2 })
+    gsap.to(camera.position, { y: mousePosition.y * 0.09, duration: 2 })
 
-    camera.position.z = - scroll.y * 0.0008
+    camera.position.z = - scroll.y * 0.0015
     
     // Render
     renderer.render(scene, camera)
