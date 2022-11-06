@@ -1,20 +1,30 @@
 .project-container {
     display: block;
     position: relative;
-    height:20rem;
+    height:30rem;
     outline: 5px solid #ffffff;
     outline-offset: 10px;
-
+    overflow: hidden;
+    background-color: transparent;
 
     &:hover .project {
-        opacity: 0;
-        transform: scale(0) rotateZ(180deg);
+        // opacity: 0;
+        transform: translateY(40rem)
+    }
+
+    &:hover .project__description {
+        z-index: 0;
     }
 }
 
 .project {    
     height: 100%;
     transition: all .6s;
+
+    &--acoord {
+        background-image: url(../../static/img/acoord.png);
+        background-size: cover;        
+    }
 
     &--under-water {
         background-image: url(../../static/img/under-water.png);
@@ -38,9 +48,15 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -3;
+        z-index: -1;
         text-align: center;
         font-size: 2rem;
+        font-weight: 300;
         color: #ffffff;
+
+        &-title {
+            font-size: 3rem;
+            font-weight: 300;
+        }
     }
 }

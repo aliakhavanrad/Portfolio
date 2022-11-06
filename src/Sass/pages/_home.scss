@@ -37,7 +37,8 @@
 
 .intro__name
 {    
-    font-size: 3.5rem; 
+    font-size: 3.8rem; 
+    font-weight: 300;
     letter-spacing: .5rem;
     padding: 2rem;
     animation: intro__name-move-down 1.8s ease-out;
@@ -47,11 +48,11 @@
 
 @keyframes intro__name-move-down {
     0% {
-        transform: translateY(10rem);
+        transform: translateY(-10rem);
         opacity: 0;
     }
     80% {
-        transform: translateY(-1rem);
+        transform: translateY(.3rem);
     }
     100% {
         transform: translateY(0rem);
@@ -63,7 +64,8 @@
 
 
 .intro__title{
-    font-size: 2.4rem;  
+    font-size: 2.6rem;  
+    font-weight: 300;
     animation: intro__title-move-up 1.8s ease-out;  
     letter-spacing: 1rem;
     text-shadow: 0 4px 8px #dddddd55;
@@ -72,11 +74,11 @@
 
 @keyframes intro__title-move-up {
     0% {
-        transform: translateY(-10rem);
+        transform: translateY(10rem);
         opacity: 0;
     }
     80% {
-        transform: translateY(1rem);
+        transform: translateY(-.3rem);
     }
     100% {
         transform: translateY(0rem);
@@ -90,7 +92,7 @@
     position: relative;
     width: 100vw;
     z-index: 10;
-    padding: 2rem;
+    padding: 6rem 2rem;
     background-image: linear-gradient(to right bottom, 
                                     rgba(255,255,255, 0.9) 0%,
                                     rgba(255,255,255, 0.9) 50%,
@@ -107,10 +109,11 @@
 .about__heading{
     display: inline-block;
     font-size: 3rem;
+    font-weight: 300;
     border-bottom: 2px solid #555555aa;
     padding: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: .8rem;
     text-shadow: 0 2px 4px #00000055;
 }
 
@@ -122,22 +125,24 @@
 .about__list-items 
 {
     font-size: 2.5rem;
+    font-weight: 300;
     padding: 1rem;
 }
 
 
 
 
-.section_personal-projects {
-    padding: 3rem;
+.section_projects {
+    padding: 10rem 10rem;
     color: rgba(255,255,255, 0.9);
 }
 
-.personal-projects__heading {
+.projects__heading {
     display: inline-block;
     font-size: 3rem;
-    padding: 1rem;
+    font-weight: 300;
     letter-spacing: .8rem;
+    padding: 1rem;
     border-bottom: 2px solid rgba(255,255,255, 0.9);
     text-shadow: 0 4px 8px #dddddd55;
     text-transform: uppercase;
@@ -148,8 +153,8 @@
 .section-footer {
     position: relative;
     width: 100vw;
+    padding: 3rem 0 1rem 0;
     z-index: 10;
-    padding: 2rem;
     background-image: linear-gradient(to right bottom, 
                                     rgba(255,255,255, 0.9) 0%,
                                     rgba(255,255,255, 0.9) 50%,
@@ -157,6 +162,7 @@
     color: #555555;
 }
 
-.footer {
+.copyright {
     font-size: 1.5rem;
+    display: inline-block;
 }

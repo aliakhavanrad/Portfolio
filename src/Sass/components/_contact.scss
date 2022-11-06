@@ -1,0 +1,100 @@
+// .contact {
+   
+//     width: 100vw;
+//     padding: 0 6rem;
+    
+//     &__heading {
+//         font-size: 3rem;
+//     }
+
+//     &__list {
+//         list-style: none;
+
+//         &-item {
+//             display: block;
+//             height: 100%;
+//             padding: .2rem;
+
+//             & a:link,
+//             & a:visited {
+//                 display: inline-block;                
+//                 height: 100%;
+//                 transition: all .3s;
+//                 text-decoration: none;
+//                 color:#444444;
+
+//                 & svg {
+//                     height: 2rem;
+//                     width: auto;
+//                     vertical-align: middle;
+//                     fill: #444444;
+//                     transition: all .3s;
+//                 }
+
+//                 & span {
+//                     font-size: 1.3rem;
+//                     font-weight: 400;
+//                     padding-left: 1rem ;
+//                     vertical-align: middle;
+//                 }
+//             }
+
+            
+//         }
+//     }
+// }
+
+.contact {
+   
+    width: 100vw;
+    
+
+    &__list {
+        list-style: none;
+        display: inline-block;
+        width: 10%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            display: inline-block;
+            height: 100%;
+            padding: .2rem;
+
+            & a:link,
+            & a:visited {
+                display: inline-block;                
+                height: 100%;
+                transition: all .3s;
+                text-decoration: none;
+                color:#444444;
+
+                & svg {
+                    height: 3rem;
+                    width: auto;
+                    vertical-align: middle;
+                    fill: #444444;
+                    transition: all .3s;
+                }
+
+                // & span {
+                //     font-size: 1.3rem;
+                //     font-weight: 400;
+                //     padding-left: 1rem ;
+                //     vertical-align: middle;
+                // }
+                
+                // &:hover {
+                //     background-color:#444444;
+                // }
+
+                // &:hover svg {
+                //     fill: rgba(255,255,255, 0.9);
+                // }
+            }
+
+            
+        }
+    }
+}
