@@ -1,7 +1,6 @@
 .project-container {
     display: block;
     position: relative;
-    height:30rem;
     outline: 5px solid #ffffff;
     outline-offset: 10px;
     overflow: hidden;
@@ -9,7 +8,7 @@
 
     &:hover .project {
         // opacity: 0;
-        transform: translateY(40rem)
+        transform: translateY(100%)
     }
 
     &:hover .project__description {
@@ -22,21 +21,25 @@
     transition: all .6s;
 
     &--acoord {
+        height: 30rem;
         background-image: url(../../static/img/acoord.png);
         background-size: cover;        
     }
 
     &--under-water {
+        height: 30rem;
         background-image: url(../../static/img/under-water.png);
         background-size: cover;
     }
 
     &--hala-madrid {
+        height: 30rem;
         background-image: url(../../static/img/hala-madrid.png);
         background-size: cover;
     }
 
     &--woman-life-freedom {
+        height: 30rem;
         background-image: url(../../static/img/woman-life-freedom.png);
         background-size: cover;
 
